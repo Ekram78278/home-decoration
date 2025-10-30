@@ -18,7 +18,8 @@ const router = createBrowserRouter([
     children:[
         {
             index:true,
-            Component: home
+            Component: home,
+            loader: () => fetch('../../public/furnitureData.json')
         },
         { 
             path:"/products",
